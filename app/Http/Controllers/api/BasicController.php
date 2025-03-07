@@ -11,6 +11,7 @@ use App\Http\Resources\basicCollection;
 
 class BasicController extends Controller
 {
+    // the user and users function are worded on th Resources file
     public function user(Request $request,$id){
         $basic = basic::find($id);
         return new BasicResource($basic);
